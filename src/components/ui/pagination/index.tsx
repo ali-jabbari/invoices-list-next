@@ -23,9 +23,9 @@ const Pagination: React.FC<IndexProps> = ({ count, className, totalPages }) => {
 
   return (
     <div
-      className={`${className} ss02 right-10 px-4 left-10 max-lg:flex-col max-lg:right-4 max-lg:left-4 fixed bottom-0 flex min-h-[90px] flex-wrap items-center md:justify-between gap-[10px] py-4 md:gap-[32px] border-t border-neutral-150 bg-neutral-50 md:flex-nowrap`}
+      className={`${className} ss02 right-10 px-4 left-10 max-lg:flex-col max-lg:right-4 max-lg:left-4 fixed bottom-0 flex min-h-[90px] max-lg:min-h-[20px] flex-wrap items-center md:justify-between gap-[10px] py-4 md:gap-[32px] border-t border-neutral-150 bg-neutral-50 md:flex-nowrap`}
     >
-      <div className="flex items-center gap-5 ">
+      <div className="flex items-center gap-5 max-lg:hidden">
         <ResultsPerPage />
 
         {count && (

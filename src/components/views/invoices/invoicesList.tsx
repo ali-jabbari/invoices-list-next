@@ -23,7 +23,7 @@ const InvoicesList: React.FC<ParamsModels> = async ({ searchParams }) => {
     );
 
   return (
-    <div className="lg:bg-white w-full p-0 rounded-lg mt-5">
+    <div className="lg:bg-white w-full p-0 max-lg:pb-[100px] rounded-lg mt-5">
       <Table invoices={items} className="max-lg:hidden" />
       <InvoiceCards invoices={items} className="lg:hidden" />
       <Pagination

@@ -18,7 +18,7 @@ const ResultsPerPage = () => {
   };
 
   return (
-    <div className="flex items-center gap-[8px]">
+    <div className="flex items-center gap-[8px] max-lg:hidden">
       <Typography
         variants="label-lg-medium"
         color="title"
