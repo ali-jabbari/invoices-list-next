@@ -2,30 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  /* --background: #ffffff;
-  --foreground: #171717; */
+.ss02 {
+  -moz-font-feature-settings: "ss02";
+  -webkit-font-feature-settings: "ss02";
+  font-feature-settings: "ss02";
 }
 
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-} */
+.no-ss02 {
+  -moz-font-feature-settings: normal;
+  -webkit-font-feature-settings: normal;
+  font-feature-settings: normal;
+}
+
+:root {
+  --background: #f6f6f6;
+  --foreground: #000000;
+}
 
 html,
 body {
-  /* max-width: 100vw;
-  overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 body {
-  /* color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; */
 }
 
 * {
@@ -39,9 +39,145 @@ a {
   text-decoration: none;
 }
 
-/* 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+.ss02 {
+  -moz-font-feature-settings: "ss02";
+  -webkit-font-feature-settings: "ss02";
+  font-feature-settings: "ss02";
+}
+
+.no-ss02 {
+  -moz-font-feature-settings: normal;
+  -webkit-font-feature-settings: normal;
+  font-feature-settings: normal;
+}
+
+@layer components {
+  .container {
+    @apply mx-auto w-full max-w-[1440px] px-[16px];
+    /* @apply mx-auto w-full px-[16px] sm:px-[24px] xl:max-w-[1258px] xl:px-[16px] 2xl:max-w-[1440px]; */
   }
-} */
+
+  /* Typography */
+  .display-lg-bold {
+    @apply text-57 font-bold leading-86;
+  }
+
+  .display-md-regular {
+    @apply text-45 font-normal leading-64;
+  }
+
+  .display-sm-regular {
+    @apply text-36 font-normal leading-56;
+  }
+
+  .display-sm-numberal-regular {
+    @apply text-36 font-normal leading-56;
+  }
+
+  .headline-lg-medium {
+    @apply text-32 font-medium leading-40;
+  }
+
+  .headline-md-regular {
+    @apply text-28 font-normal leading-44;
+  }
+
+  .headline-sm-semibold {
+    @apply text-24 font-semibold leading-32;
+  }
+
+  .headline-lg-number-semibold {
+    @apply text-24 font-semibold leading-32;
+  }
+
+  .headline-sm-number {
+    @apply text-24 font-normal leading-32;
+  }
+
+  .title-lg-bold {
+    @apply text-22 font-bold leading-28;
+  }
+
+  .title-lg1-bold {
+    @apply text-18 font-bold leading-32;
+  }
+
+  .title-md-medium {
+    @apply text-16 font-medium leading-24;
+  }
+
+  .title-sm-medium {
+    @apply text-14 font-medium leading-20;
+  }
+
+  .title-lg-number-bold {
+    @apply text-22 font-bold leading-28;
+  }
+
+  .label-xl-regular {
+    @apply text-16 font-normal leading-24;
+  }
+
+  .label-lg-medium {
+    @apply text-14 font-medium leading-20;
+  }
+
+  .label-md-medium {
+    @apply text-12 font-medium leading-16;
+  }
+
+  .label-sm-regular {
+    @apply text-11 font-normal leading-16;
+  }
+
+  .label-lg-semibold {
+    @apply text-16 font-semibold;
+  }
+
+  .label-number-xlg-regular {
+    @apply text-16 font-normal leading-32;
+  }
+
+  .label-number-lg-medium {
+    @apply text-14 font-medium leading-20;
+  }
+
+  .body-lg-regular {
+    @apply text-16 font-normal leading-24;
+  }
+
+  .body-md-regular {
+    @apply text-14 font-normal leading-28;
+  }
+
+  .body-sm-regular {
+    @apply text-12 font-normal leading-16;
+  }
+
+  .body-number-body-sm-regular {
+    @apply text-12 font-normal leading-16;
+  }
+
+  .body-md-number-regular {
+    @apply text-14 font-normal leading-28;
+  }
+
+  .large-d-bold {
+    @apply text-14 font-semibold leading-20;
+  }
+
+  .link-min {
+    @apply text-12 font-normal leading-20;
+  }
+
+  .link-lg {
+    @apply text-14 font-normal leading-20;
+  }
+  .status-small-D-bold {
+    @apply text-12 font-semibold leading-20;
+  }
+
+  .hiddenScrollbar {
+    @apply [-ms-overflow-style:'none'] [scrollbar-width:'none'] [&::-webkit-scrollbar]:hidden;
+  }
+}

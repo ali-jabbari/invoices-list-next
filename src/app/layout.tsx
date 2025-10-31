@@ -4,7 +4,7 @@ import { iranYekan } from "@/utils/fonts";
 
 
 export const metadata: Metadata = {
-  title: "رامان"
+  title: "رامان | پنل تامین کننده"
 };
 
 export default function RootLayout({
@@ -15,6 +15,7 @@ export default function RootLayout({
   return (
     <html lang="fa" dir="rtl">
       <body className={`${iranYekan.variable} font-iran-yekan antialiased`}>
+         <div id="portal" />
         {children}
       </body>
     </html>
